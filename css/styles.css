@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    /*background:linear-gradient(0deg, rgba(34,195,98,1) 26%, rgba(0,0,0,1) 100%);         /*linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient from left to right */
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f0;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #0f0;
+}
+
+.auth-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.auth-links a:hover {
+    color: #0f0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #111;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-links.active ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* For retro pixelated effect */
+.navbar, .nav-links ul li a, .auth-links a {
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+/* Search bar animations */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0f0;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-bar:focus {
+    width: 70%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0f0;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0a0;
+}
+
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.game-card {
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0f0;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-card h2 {
+    color: #0f0;
+    margin-top: 10px;
+}
+
+.game-card p {
+    color: #aaa;
+}
+
+/* Css for admin*/
+
+.admin-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-container h1 {
+    color: #0f0;
+}
+
+.admin-container form {
+    margin-bottom: 50px;
+}
+
+.admin-container input[type="text"], 
+.admin-container textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0f0;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+}
+
+.admin-container input[type="file"] {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.delete-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c00;
+}
+
+/* cSS FOR REviws SECTIoin */
+ 
+
+.reviews-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0f0;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    color: #0f0;
+    margin-bottom: 20px;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.review-item h3 {
+    color: #0f0;
+}
+
+.review-item p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.review-item small {
+    color: #777;
+}
+
+
+/* footer styles */
+/* Footer Styles */
+/* Glowing Footer Styles */
+.glowing-footer {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    box-shadow: 0 -1px 10px rgba(0, 255, 0, 0.7); /* Green glow */
+    margin-top: 50px; /* Adds space between the footer and content */
+}
+
+.glowing-footer .footer-content p {
+    margin: 10px 0; /* Spacing between paragraphs */
+    font-size: 0.9em; /* Adjust font size */
+}
+
+.glowing-footer a {
+    color: #0f0; /* Green link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.glowing-footer a:hover {
+    color: #fff; /* White when hovered */
+}
+
+/* Glowing Separator */
+.glowing-footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(0, 255, 0, 0.7), rgba(0, 0, 0, 0), rgba(0, 255, 0, 0.7)); /* Gradient for glow */
+    margin-bottom: 20px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Glow effect */
+}
+
+

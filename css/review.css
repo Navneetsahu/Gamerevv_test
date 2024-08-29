@@ -1,0 +1,49 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.review-container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0f0;
+    text-align: center;
+    width: 400px;
+}
+
+.review-container h1 {
+    margin-bottom: 20px;
+    color: #0f0;
+}
+
+.review-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    height: 100px;
+}
+
+.review-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0f0;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-container button:hover {
+    background-color: #0a0;
+}

@@ -1,0 +1,79 @@
+/* Styling for the games page */
+
+.games-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0f0;
+}
+
+.games-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.games-list h2 {
+    color: #0f0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.games-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.games-list li {
+    margin-bottom: 20px;
+}
+
+.games-list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+.games-list li a:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.games-list img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.game-details {
+    flex: 2;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.game-details h2 {
+    color: #0f0;
+    margin-bottom: 20px;
+}
+
+.game-details img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-details p {
+    color: #ccc;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
